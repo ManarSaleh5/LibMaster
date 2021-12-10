@@ -272,13 +272,24 @@ public class login_Fr extends javax.swing.JFrame {
                System.out.print(R.getInt("Admin"));
                 if(email.equals(R.getString("Email"))&&pass.equals(R.getString("PASSWORD_"))&&R.getInt("Admin")==1)
                 {
-                     bookadmin ba=new bookadmin();
+                     bookadmin ba=new bookadmin(email);
                      ba.setVisible(true);
                      this.setVisible(false);
                      System.out.println("Hi");
                      break;
                     
                 }
+                
+                if(email.equals(R.getString("Email"))&&pass.equals(R.getString("PASSWORD_"))&&R.getInt("Admin")==0)
+                {
+                     Book b=new Book(email);
+                     b.setVisible(true);
+                     this.setVisible(false);
+                     System.out.println("Hi");
+                     break;
+                    
+                }
+                
               
               }
         }
