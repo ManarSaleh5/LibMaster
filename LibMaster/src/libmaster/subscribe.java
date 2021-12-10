@@ -3,10 +3,7 @@ package libmaster;
 
 
 import javax.swing.ImageIcon;
-/**
- *
- * @author Mn
- */
+
 public class subscribe extends javax.swing.JFrame {
 
     /**
