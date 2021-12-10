@@ -5,10 +5,6 @@ package libmaster;
 import javax.swing.ImageIcon;
 
 public class subscribe extends javax.swing.JFrame {
-
-    /**
-     * Creates new form NewJFrame
-     */
     public subscribe() {
         initComponents();
     }
