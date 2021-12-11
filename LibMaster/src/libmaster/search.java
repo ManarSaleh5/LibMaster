@@ -27,7 +27,7 @@ public class search extends javax.swing.JFrame {
          {
               String host ="jdbc:oracle:thin:@localhost:1521:orcl";
               String Name="Eng_Dania";
-              String password="11820498";
+              String password="123456";
               con = DriverManager.getConnection(host, Name, password);
               con = DriverManager.getConnection(host, Name, password);
               S=con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);

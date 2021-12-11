@@ -42,7 +42,7 @@ public class Book extends javax.swing.JFrame {
          {
               String host ="jdbc:oracle:thin:@localhost:1521:orcl";
               String Name="Eng_Dania";
-              String password="11820498";
+              String password="123456";
               con = DriverManager.getConnection(host, Name, password);
               con = DriverManager.getConnection(host, Name, password);
               S=con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
@@ -197,6 +197,11 @@ public class Book extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Javanese Text", 0, 16)); // NOI18N
         jLabel8.setText("Home");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -256,6 +261,10 @@ public class Book extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseClicked
 
    
 
