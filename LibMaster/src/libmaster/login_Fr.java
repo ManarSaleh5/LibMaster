@@ -28,7 +28,7 @@ public class login_Fr extends javax.swing.JFrame {
     public Statement S;
     public PreparedStatement pst;
     public ResultSet R;
-    
+    public static String Em ;
     public login_Fr() {
         initComponents();
         email=new String();
@@ -263,7 +263,7 @@ public class login_Fr extends javax.swing.JFrame {
             {
                System.out.print(R.getInt("Admin"));
                 if(email.equals(R.getString("Email"))&&pass.equals(R.getString("PASSWORD_"))&&R.getInt("Admin")==1)
-                {
+                {     
                      bookadmin ba=new bookadmin(email);
                      ba.setVisible(true);
                      this.setVisible(false);
@@ -274,6 +274,7 @@ public class login_Fr extends javax.swing.JFrame {
                 
                 if(email.equals(R.getString("Email"))&&pass.equals(R.getString("PASSWORD_"))&&R.getInt("Admin")==0)
                 {
+                     Em=email;
                      Book b=new Book(email);
                      b.setVisible(true);
                      this.setVisible(false);
