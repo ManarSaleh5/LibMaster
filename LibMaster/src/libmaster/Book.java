@@ -266,7 +266,32 @@ public class Book extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel8MouseClicked
 
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
    
+          try {
+            // TODO add your handling code here:
+         
+             DefaultTableModel t=(DefaultTableModel)jTable1.getModel();
+             int index=jTable1.getSelectedRow();
+            
+         
+       String SQL="INSERT INTO Buy_r(Book_name,Book_ID,Price,Email_U) " 
+                       + "VALUES(?,?,?,?)";  
+             
+               pst.setString(1,String.valueOf(t.getValueAt(index,0)));
+               pst.setString(2,String.valueOf(t.getValueAt(index,1)));
+                 pst.setInt(3,0);//price
+               pst.setString(4,login_Fr.Em);
+             
+                pst.executeUpdate();
+          
+        } catch (SQLException ex) {
+          
+        }
+        
+    }//GEN-LAST:event_jButton1MouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
