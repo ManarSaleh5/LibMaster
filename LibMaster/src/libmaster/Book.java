@@ -320,6 +320,30 @@ public class Book extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jButton1MouseClicked
+     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        
+     try {
+            // TODO add your handling code here:
+     
+             DefaultTableModel t=(DefaultTableModel)jTable1.getModel();
+            
+            
+         
+       String SQL="INSERT INTO Borrow _r(Book_name,Book_ID,Price,Email_U) " 
+                       + "VALUES(?,?,?,?)";  
+        int index=jTable1.getSelectedRow();
+             
+               pst.setString(1,String.valueOf(t.getValueAt(index,0)));
+               pst.setString(2,String.valueOf(t.getValueAt(index,1)));
+                 pst.setInt(3,0);//price
+               pst.setString(4,login_Fr. jTextField2.getText());
+             
+                pst.executeUpdate();
+          
+        } catch (SQLException ex) {
+          
+        }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
