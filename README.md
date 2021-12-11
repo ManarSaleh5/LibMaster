@@ -54,6 +54,8 @@ https://drive.google.com/file/d/1WjluqvwqlC75ikvWgdMyMBQpuoGwqQ4p/view?usp=shari
 
 
 Last sprint :
+sequence digram: Raghad Daraghmeh   Manar Saleh
+https://drive.google.com/file/d/18Ml8Xfx8Nq0YVaY9VW8eyck7IOP_D4K_/view?usp=sharing
 
 
 
